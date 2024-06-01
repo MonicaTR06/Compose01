@@ -1,4 +1,4 @@
-package com.example.home.mymovies
+package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,19 +6,18 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.*
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.example.home.mymovies.ui.component.FilledButton
-import com.example.home.mymovies.ui.theme.MyMoviesTheme
+import com.example.myapplication.ui.component.FilledButton
+import com.example.myapplication.ui.theme.MyApplicationTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyMoviesTheme { //(optional) own theme
+            MyApplicationTheme { //(optional) own theme
                 Surface(//Component of compose (container)
                     modifier = Modifier.fillMaxSize(),//Modifier api tipo Builder
                     /*
@@ -30,11 +29,11 @@ class MainActivity : ComponentActivity() {
                     *
                     * Orden de Modifier muy importante y puedes repetir modifiers, el onclick primero si deaseas que abarque a todo el contenido
                     * */
-                    color = MaterialTheme.colors.background
+                    //color = MaterialTheme.colors.background
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        FilledButton(text = stringResource(id = R.string.Structure)) {
-                            val intent = Intent(this@MainActivity, LayoutsActivity::class.java)
+                        FilledButton(text = stringResource(id = R.string.structure)) {
+                            val intent = Intent(this@MainActivity2, LayoutsActivity::class.java)
                             startActivity(intent)
                         }
 

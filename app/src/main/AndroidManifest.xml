@@ -23,6 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity2" android:exported="false"/>
+        <activity android:name=".ExampleBoxesActivity" android:exported="false"/>
+        <activity android:name=".LayoutsActivity" android:exported="false"/>
     </application>
 
 </manifest>

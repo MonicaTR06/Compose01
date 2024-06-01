@@ -1,4 +1,4 @@
-package com.example.home.mymovies.layouts
+package com.example.myapplication.layouts
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,14 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.home.mymovies.ui.component.Greeting
-import com.example.home.mymovies.ui.theme.MyMoviesTheme
+import com.example.myapplication.ui.component.Greeting
+import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class BoxActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class BoxActivity : ComponentActivity() {
 @Preview(showBackground = true, name = "Android Greeting", widthDp = 400, heightDp = 200)
 @Composable
 fun DefaultPreview() {
-    MyMoviesTheme {
+    MyApplicationTheme {
         //Box x defecto se adapata al tamaño de sus hijos
         Box(
             modifier = Modifier

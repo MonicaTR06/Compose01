@@ -1,4 +1,4 @@
-package com.example.home.mymovies.layouts
+package com.example.myapplication.layouts
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,8 +12,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.home.mymovies.ui.component.Greeting
-import com.example.home.mymovies.ui.theme.MyMoviesTheme
+import com.example.myapplication.ui.component.Greeting
+import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class RowActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class RowActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview2() {
-    MyMoviesTheme {
+    MyApplicationTheme {
         Row(
             modifier = Modifier.fillMaxSize(),
             horizontalArrangement = Arrangement.SpaceEvenly,

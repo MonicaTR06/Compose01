@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="structure">My Structure</string>
+    <string name="example_string">My ExampleString</string>
 </resources>
