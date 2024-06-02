@@ -1,5 +1,4 @@
-package com.example.myapplication
-
+package com.example.myapplication.layouts
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -33,6 +32,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
+import com.example.myapplication.R
+import com.example.myapplication.ui.component.Greeting
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 class ExampleBoxesActivity : ComponentActivity() {
@@ -58,11 +59,6 @@ class ExampleBoxesActivity : ComponentActivity() {
             }
         }
     }
-}
-
-@Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    Text(text = "Hola $name!", modifier = modifier)
 }
 
 @Preview(
@@ -156,7 +152,7 @@ fun MediaItem() {
         }
     }
 }
-
+/*
 @Preview(
     showBackground = true,
     showSystemUi = true,
@@ -174,19 +170,19 @@ fun DefaultPreview() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceEvenly //SpaceBetween(no pone espacio en los bordesarriba y abajo), SpaceAround(mismo espacio arriba y abajo x cada elemento)
         ) {
-            Greeting2(
+            Greeting(
                 name = "Android",
                 modifier = Modifier.background(Color.Blue)
                 //weight(1f) sin vertical
             )
-            Greeting2(
+            Greeting(
                 name = "Moni :) Android",
                 modifier = Modifier.background(Color.Red)
             )
-            Greeting2(
+            Greeting(
                 name = "Moni :D",
                 modifier = Modifier.background(Color.Green)
             )
         }
     }
-}
+}*/
